@@ -1,0 +1,53 @@
+ @font-face {
+    font-family: Outfit;
+    src: url(Outfit/static/Outfit-Regular.ttf);
+    font-weight: 400;
+ }
+ @font-face {
+    font-family: Outfit;
+    src: url(Outfit/static/Outfit-Bold.ttf);
+    font-weight: 700;
+ }
+
+:root {
+    --mobile : 375px;
+    --desktop: 1440px;
+
+    --white: hsl(0, 0%, 100%);
+    --gray: #9c9fa4;
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    background: var(--light-gray);
+
+    font-size: 15px;
+    font-family: Outfit;
+}
+
+.qrCodeContainer {
+    padding: 15px;
+    background: var(--white);
+    max-width: var(--mobile);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.qrCodeImg {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.qrCodeTitle {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0%;
+}
+
+.qrCodeDescription {
+    color: var(--gray);
+    text-align: center;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
